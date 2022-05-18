@@ -57,8 +57,8 @@ public class Tesis extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 	
-	public int palabrasTotales(int factor) {
-		return this.getPaginas() * Tesis.factor;
+	public int palabrasTotales(int palabrasPagina) {
+		return this.getPaginas() * Tesis.factor * palabrasPagina;
 	}
 	
 	public String interpretacion() {

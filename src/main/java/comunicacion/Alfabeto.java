@@ -22,7 +22,12 @@ public class Alfabeto extends Pictograma{
 	public String toString() {
 		String cont = "";
 		for (int i = 0; i < letras.length; i++){
-                cont += letras[i] + ", ";
+			if(i != letras.length - 1) {
+				cont += letras[i] + ", ";
+				}
+			else {
+				cont += letras[i];
+				}
             }
 		return cont;
 	}
